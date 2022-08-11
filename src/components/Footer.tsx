@@ -9,7 +9,7 @@ import {
 const Footer = () => {
   return (
     <div className="py-20">
-      <div className="w-[85%] mx-auto flex itmes-center justify-between">
+      <div className="w-[95%] lg:w-[85%] mx-auto flex flex-col items-center lg:flex-row itmes-center justify-between gap-4">
         <ul className="flex items-center gap-6">
           <li className="cursor-pointer text-gray-400 hover:text-gray-600 text-2xl">
             <FaFacebook />

@@ -2,8 +2,8 @@ import React from 'react';
 
 const Trial = () => {
   return (
-    <div className="flex flex-col items-center justify-center py-20 gap-6 border-b border-b-gray-200">
-      <h1 className="text-4xl font-semibold w-1/2 text-center">
+    <div className="flex flex-col items-center justify-center py-20 gap-6 border-b border-b-gray-200 px-4">
+      <h1 className="text-4xl font-semibold w-full lg:w-1/2 text-center">
         Since we’re both serious about your business, let’s make it official.
         Try Kajabi free for 14 days.
       </h1>

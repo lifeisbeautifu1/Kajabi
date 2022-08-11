@@ -3,18 +3,18 @@ import Resource from './Resource';
 const Resources = () => {
   return (
     <div className="bg-[#0072ef] text-white">
-      <div className="w-[85%] m-auto py-20">
+      <div className="w-[95%] lg:w-[85%] m-auto py-20">
         <h1 className="text-6xl font-semibold">
           Resources to help you earn more
         </h1>
-        <div className="flex flex-wrap py-8 gap-10">
+        <div className="flex flex-wrap py-8 gap-8 justify-between">
           <Resource
             title="Kajabi Blog"
             paragraph="Stay informed on the latest trends in today’s creator economy."
           />
           <Resource
             title="Kajabi Edge Podcast"
-            paragraph="Stay informed on the latest trends in today’s creator economy."
+            paragraph="Listen to real success stories from creators and entrepreneurs just like you."
           />
           <Resource
             title="Kajabi University"

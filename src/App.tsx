@@ -21,8 +21,8 @@ function App() {
       <Header />
       <Event />
       <Stats />
-      <div className="w-[85%] m-auto">
-        <h1 className="text-6xl font-semibold pt-12 text-gray-700">
+      <div className="w-[95%] lg:w-[85%] mx-auto">
+        <h1 className="text-4xl lg:text-6xl font-semibold pt-12 text-gray-700">
           Kajabi makes it easy for you to:
         </h1>
         <Section
@@ -32,7 +32,6 @@ function App() {
         />
         <Section
           image={SecondImage}
-          reverse
           title="Grow"
           paragraph="Leverage Kajabi’s full suite of marketing tools and templates to create new content, campaigns, and funnels in minutes."
         />
@@ -41,7 +40,7 @@ function App() {
           title="Manage"
           paragraph="Manage growth with built-in CRM, collect payments with Stripe and Paypal integrations, and use analytics to make informed business decisions."
         />
-        <h1 className="text-6xl font-semibold mb-4">
+        <h1 className="text-4xl lg:text-6xl font-semibold mb-4">
           Creators and entrepreneurs <br /> of all kinds trust Kajabi
         </h1>
         <Slider />
