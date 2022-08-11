@@ -51,7 +51,7 @@ const Slider = () => {
     return () => clearInterval(interval);
   }, [currentIndex]);
   return (
-    <div className="overflow-hidden mb-20 relative h-[550px] lg:h-[300px] mt-8">
+    <div className="overflow-hidden mb-20 relative h-[650px] lg:h-[300px] mt-8">
       {slides.map((slide, index) => {
         let position = 'nextSlide';
         if (index === currentIndex) {

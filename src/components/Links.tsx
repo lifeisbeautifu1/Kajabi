@@ -1,6 +1,6 @@
 const Links = () => {
   return (
-    <div className="w-[95%] lg:w-[85%] mx-auto py-12 flex flex-wrap justify-between">
+    <div className="w-[95%] lg:w-[85%] mx-auto py-12 flex flex-wrap lg:justify-between justify-center text-center md:text-left">
       <ul className="flex flex-col text-sm text-gray-400 gap-2 w-[300px] mt-8">
         <h1 className="font-semibold text-lg text-black mb-3">Product</h1>
         <li className="cursor-pointer hover:text-gray-500">Pricing</li>

@@ -8,22 +8,24 @@ const Header = () => {
           <span className="text-[12px] font-medium border-2 rounded-[30px] py-1 px-3 text-red-400 border-red-400">
             Limited time
           </span>
-          <h1 className="text-5xl md:text-6xl  font-semibold leading-[1.1]">
+          <h1 className="text-3xl md:text-6xl  font-semibold leading-[1.1]">
             Start your <br />
             business today. <br />
             <p className="flex mt-2">
-              <span className="flex font-bold text-blue-600  pr-2">
+              <span className="flex items-center font-bold text-blue-600  pr-2">
                 3 MONTHS
               </span>
-              <span className="text-xl self-end">
+              <span className="text-xl self-center md:self-end">
                 {' '}
                 for <s>$597</s>
               </span>
               <span className="flex">
-                <span className="text-blue-600 text-4xl self-start mt-2">
+                <span className="text-blue-600 text-xl md:text-4xl self-start mt-2">
                   $
                 </span>
-                <span className="font-bold text-blue-600">99</span>
+                <span className="font-bold text-blue-600 flex items-center">
+                  99
+                </span>
               </span>
             </p>
           </h1>
