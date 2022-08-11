@@ -3,16 +3,16 @@ import HeaderImage from '../images/header.webp';
 const Header = () => {
   return (
     <header className="mt-[95px] flex bg-sky-100 py-12">
-      <div className="flex w-[95%] mx-auto lg:w-[85%]">
-        <div className="w-full lg:w-1/2 flex flex-col items-center gap-2 md:items-start text-center md:text-left">
+      <div className="flex gap-8 w-[95%] mx-auto lg:w-[85%]">
+        <div className="w-full lg:w-[65%] flex flex-col items-center gap-2 md:items-start text-center md:text-left">
           <span className="text-[12px] font-medium border-2 rounded-[30px] py-1 px-3 text-red-400 border-red-400">
             Limited time
           </span>
           <h1 className="text-5xl md:text-6xl  font-semibold leading-[1.1]">
             Start your <br />
             business today. <br />
-            <p className="flex">
-              <span className="font-bold text-blue-600 inline-block pr-2">
+            <p className="flex mt-2">
+              <span className="flex font-bold text-blue-600  pr-2">
                 3 MONTHS
               </span>
               <span className="text-xl self-end">
@@ -37,10 +37,10 @@ const Header = () => {
             Terms and conditions
           </span>
         </div>
-        <div className="w-1/2 hidden lg:block">
+        <div className="w-[35%] hidden lg:block">
           <img
             src={HeaderImage}
-            className="ml-auto w-[475px] h-full object-cover"
+            className="ml-auto min-w-[100px] w-full max-w-[450px] h-full object-contain"
             alt="header"
           />
         </div>

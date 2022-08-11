@@ -41,11 +41,17 @@ const Slider = () => {
     }
   };
   useEffect(() => {
-    const interval = setInterval(handleIncrement, 5000);
+    const interval = setInterval(() => {
+      if (currentIndex + 1 >= slides.length) {
+        setCurrentIndex(0);
+      } else {
+        setCurrentIndex(currentIndex + 1);
+      }
+    }, 5000);
     return () => clearInterval(interval);
   }, [currentIndex]);
   return (
-    <div className="mb-20 relative h-[500px] lg:h-[300px] mt-8">
+    <div className="overflow-hidden mb-20 relative h-[550px] lg:h-[300px] mt-8">
       {slides.map((slide, index) => {
         let position = 'nextSlide';
         if (index === currentIndex) {
@@ -53,14 +59,14 @@ const Slider = () => {
         }
         if (
           index === currentIndex - 1 ||
-          (currentIndex == 0 && index === slides.length - 1)
+          (currentIndex === 0 && index === slides.length - 1)
         ) {
           position = 'prevSlide';
         }
         return (
           <div
             key={index}
-            className={`slide absolute -z-10 ${position} flex flex-col lg:flex-row gap-12 items-start border-l border-l-black py-6 px-14`}
+            className={`slide absolute z-10 ${position} flex flex-col lg:flex-row gap-12 items-start border-l border-l-black py-6 px-14`}
           >
             <img src={slide.image} className="w-[250px]" alt="Anthony" />
             <div>
@@ -77,7 +83,7 @@ const Slider = () => {
       })}
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute right-0 top-[50%] h-6 w-6 text-gray-400 cursor-pointer"
+        className="absolute z-[11] right-0 top-[50%] h-6 w-6 text-gray-400 cursor-pointer"
         fill="none"
         viewBox="0 0 24 24"
         onClick={handleIncrement}
